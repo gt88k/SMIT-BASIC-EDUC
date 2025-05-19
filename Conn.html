@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="icon" type="image/x-icon" href="logo.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>SMIT Admission Website Feedback Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: blue;
+            margin: 0;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: #222;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2a3eb1;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 1.9rem;
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        label {
+            display: block;
+            margin: 12px 0 6px;
+            font-weight: 600;
+            color: #373737;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 8px;
+            border: 1.8px solid #bbb;
+            font-size: 1rem;
+            font-family: inherit;
+            resize: vertical;
+            transition: border-color 0.3s ease;
+            color: #222;
+        }
+        input[type="text"]:focus, textarea:focus {
+            border-color: #2a3eb1;
+            outline: none;
+        }
+        textarea {
+            min-height: 80px;
+        }
+        .options {
+            margin-bottom: 10px;
+        }
+        .options label {
+            display: block;
+            font-weight: 500;
+            cursor: pointer;
+            user-select: none;
+            margin-bottom: 6px;
+            color: #444;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+        .inline-input {
+            width: auto;
+            display: inline-block;
+            margin-left: 8px;
+            vertical-align: middle;
+            font-weight: normal;
+            max-width: 45%;
+        }
+        button {
+            margin-top: 20px;
+            background: #2a3eb1;
+            color: white;
+            font-size: 1.1rem;
+            padding: 14px;
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover, button:focus {
+            background: #1d2a7d;
+            outline: none;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 15px;
+                width: 100%;
+            }
+            .inline-input {
+                max-width: 100%;
+                margin-left: 0;
+                margin-top: 6px;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SMIT Admission Website Feedback Survey</h1>
+        <p>Dear Respondent,</p>
+        <p>This survey aims to gather feedback on the functionality, usability, and content of the SMIT Basic Education Admission Website. Your responses will help us improve our online services. All answers will be kept confidential.</p>
+        <form id="surveyForm" novalidate>
+            <label for="name">1. Full Name </label>
+            <input type="text" id="name" name="name" placeholder="Full Name" />
+
+            <label>2. Role:</label>
+            <div class="options" role="radiogroup" aria-labelledby="roleLabel">
+                <label><input type="radio" name="role" value="Incoming Student" required /> Incoming Student</label>
+                <label><input type="radio" name="role" value="Parent/Guardian" /> Parent/Guardian</label>
+                <label><input type="radio" name="role" value="Returning Student" /> Returning Student</label>
+                <label>
+                    <input type="radio" name="role" value="Other" />
+                    Other: <input type="text" name="otherRole" class="inline-input" placeholder="Specify" />
+                </label>
+            </div>
+
+            <label for="gradeLevel">3. Grade Level Applying For:</label>
+            <input type="text" id="gradeLevel" name="gradeLevel" placeholder="Enter Grade Level" required />
+
+            <label>4. How did you learn about the website?</label>
+            <div class="options" role="radiogroup" aria-labelledby="sourceLabel">
+                <label><input type="radio" name="source" value="Facebook" required /> Facebook</label>
+                <label><input type="radio" name="source" value="Referral" /> Referral</label>
+                <label><input type="radio" name="source" value="Google Search" /> Google Search</label>
+                <label>
+                    <input type="radio" name="source" value="Other" />
+                    Others: <input type="text" name="otherSource" class="inline-input" placeholder="Specify" />
+                </label>
+            </div>
+
+            <label>5. How easy was it to access the admission website?</label>
+            <div class="options" role="radiogroup" aria-labelledby="accessibilityLabel">
+                <label><input type="radio" name="accessibility" value="Very Easy" required /> Very Easy</label>
+                <label><input type="radio" name="accessibility" value="Easy" /> Easy</label>
+                <label><input type="radio" name="accessibility" value="Neutral" /> Neutral</label>
+                <label><input type="radio" name="accessibility" value="Difficult" /> Difficult</label>
+                <label><input type="radio" name="accessibility" value="Very Difficult" /> Very Difficult</label>
+            </div>
+
+            <label>6. Was the website layout easy to understand and navigate?</label>
+            <div class="options" role="radiogroup" aria-labelledby="layoutLabel">
+                <label><input type="radio" name="layout" value="Strongly Agree" required /> Strongly Agree</label>
+                <label><input type="radio" name="layout" value="Agree" /> Agree</label>
+                <label><input type="radio" name="layout" value="Neutral" /> Neutral</label>
+                <label><input type="radio" name="layout" value="Disagree" /> Disagree</label>
+                <label><input type="radio" name="layout" value="Strongly Disagree" /> Strongly Disagree</label>
+            </div>
+
+            <label>7. Were all necessary links (e.g., requirements, application form) easy to find?</label>
+            <div class="options" role="radiogroup" aria-labelledby="linksLabel">
+                <label><input type="radio" name="links" value="Yes" required /> Yes</label>
+                <label><input type="radio" name="links" value="Somewhat" /> Somewhat</label>
+                <label><input type="radio" name="links" value="No" /> No</label>
+            </div>
+
+            <label>8. Was the information provided (requirements, deadlines, steps) clear and complete?</label>
+            <div class="options" role="radiogroup" aria-labelledby="infoLabel">
+                <label><input type="radio" name="info" value="Very Clear" required /> Very Clear</label>
+                <label><input type="radio" name="info" value="Clear" /> Clear</label>
+                <label><input type="radio" name="info" value="Neutral" /> Neutral</label>
+                <label><input type="radio" name="info" value="Unclear" /> Unclear</label>
+                <label><input type="radio" name="info" value="Very Unclear" /> Very Unclear</label>
+            </div>
+
+            <label>9. Which parts of the website do you think need improvement? (Check all that apply)</label>
+            <div class="options" role="group" aria-labelledby="improvementsLabel">
+                <label><input type="checkbox" name="improvements" value="Admission requirements" /> Admission requirements</label>
+                <label><input type="checkbox" name="improvements" value="Online application form" /> Online application form</label>
+                <label><input type="checkbox" name="improvements" value="FAQ section" /> FAQ section</label>
+                <label><input type="checkbox" name="improvements" value="Contact information" /> Contact information</label>
+                <label>
+                    Others: <input type="text" name="improvementsOther" class="inline-input" placeholder="Specify" />
+                </label>
+            </div>
+
+            <label>10. Did you encounter any problems while submitting your application online?</label>
+            <div class="options" role="radiogroup" aria-labelledby="problemsLabel">
+                <label><input type="radio" name="problems" value="No" required /> No</label>
+                <label>
+                    <input type="radio" name="problems" value="Yes" />
+                    Yes (Please specify): <input type="text" name="problemDetails" class="inline-input" placeholder="Specify" />
+                </label>
+            </div>
+
+            <label>11. How satisfied are you with your overall experience on the admission website?</label>
+            <div class="options" role="radiogroup" aria-labelledby="satisfactionLabel">
+                <label><input type="radio" name="satisfaction" value="Very Satisfied" required /> Very Satisfied</label>
+                <label><input type="radio" name="satisfaction" value="Satisfied" /> Satisfied</label>
+                <label><input type="radio" name="satisfaction" value="Neutral" /> Neutral</label>
+                <label><input type="radio" name="satisfaction" value="Dissatisfied" /> Dissatisfied</label>
+                <label><input type="radio" name="satisfaction" value="Very Dissatisfied" /> Very Dissatisfied</label>
+            </div>
+
+            <label for="suggestions">12. Do you have any suggestions to improve our online admission system?</label>
+            <textarea id="suggestions" name="suggestions" placeholder="Your suggestions here..."></textarea>
+
+            <button  type="submit" aria-label="Submit Survey ">Submit</button>
+        </form>
+        <div id="thankYouMessage" style="display:none; margin-top:20px; color:#2a3eb1; font-weight:700; text-align:center;">
+          Thank you for completing the survey!
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('surveyForm');
+        const thankYouMessage = document.getElementById('thankYouMessage');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+
+            // Additional validation: if "Other" radio selected, corresponding text must not be empty
+            function checkOtherInput(radioName, textName) {
+                const radios = form.elements[radioName];
+                const texts = form.elements[textName];
+                let selected = false;
+                for(let r of radios) {
+                    if(r.checked && r.value === "Other") {
+                        selected = true;
+                        if (texts.value.trim() === "") {
+                            texts.focus();
+                            alert("Please specify your 'Other' selection.");
+                            return false;
+                        }
+                    }
+                }
+                return !selected || (selected && texts.value.trim() !== "");
+            }
+
+            if(!checkOtherInput('role', 'otherRole')) return;
+            if(!checkOtherInput('source', 'otherSource')) return;
+
+            // Show thank you message and hide the form
+            form.style.display = 'none';
+            thankYouMessage.style.display = 'block';
+        });
+    </script>
+</body>
+</html>

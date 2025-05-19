@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>SOUTHERN MINDANAO INSTITUTE OF TECHNOLOGY, INC.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    html {
+      scroll-behavior: smooth;
+      background-color: blue;
+    }
+    .bg-white-text-gray-800 {
+      background-image: url("jr.jpg");
+      color: white;
+    }
+    .shadow-md {
+      background-color: blue;
+    }
+    .slide-text-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slide-text {
+display: inline-block;
+white-space: nowrap;
+animation: slideLeft 10s linear infinite;
+position: absolute;
+right: -100%;
+}
+
+@keyframes slideLeft {
+0% {
+right: -100%;
+}
+100% {
+right: 100%;
+}
+} </style>
+
+</head>
+
+<body class="bg-white text-white-800">
+
+<!-- Header -->
+
+<header class="w-full shadow-md sticky top-0 indigo-700 z-50">
+  <div class="container bg-blue w-full mx-auto flex items-center justify-between py-4 px-6 md:px-12">
+    <a class="flex items-center space-x-2" href="#">
+      <img src="logo.png" class="w-13 h-12" alt="SMITIAN'S logo" />
+      <span class="text-2xl font-extrabold text-white">BASIC EDUCATION</span>
+    </a>
+    <nav>
+      <ul class="hidden md:flex space-x-8 font-semibold text-white">
+        <li><a href="#" class="hover:text-black transition">Home</a></li>
+        <li><a href="#about" class="hover:text-black transition">Admission</a></li>
+        <li><a href="#programs" class="hover:text-black transition">Programs</a></li>
+        <li><a href="#mission-vision" class="block hover:text-black transition">Mission & Vision</a>
+</li>
+        <li><a href="#events" class="hover:text-black transition">Events</a></li>
+        <li><a href="#news" class="hover:text-black transition">News</a></li>
+        <li><a href="#contact" class="hover:text-black transition">Contact</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden text-white-800 focus:outline-none focus:ring-2 focus:ring-white">
+        <i class="fas fa-bars fa-lg"></i>
+      </button>
+    </nav>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-blue shadow-md border-t border-gray-200">
+    <ul class="flex flex-col space-y-2 py-4 px-6 font-semibold text-gray-700">
+      <li><a href="#" class="block hover:text-indigo-600 transition">Home</a></li>
+      <li><a href="#about" class="block hover:text-indigo-600 transition">Admission</a></li>
+      <li><a href="#programs" class="block hover:text-indigo-600 transition">Programs</a></li>
+      <li><a href="#mission-vision" class="block hover:text-indigo-600 transition">Mission & Vision</a>
+</li>
+      <li><a href="#gallery" class="block hover:text-indigo-600 transition">Events</a></li>
+      <li><a href="#news" class="block hover:text-indigo-600 transition">News</a></li>
+      <li><a href="#contact" class="block hover:text-indigo-600 transition">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+</header>
+
+<!-- Hero -->
+
+<section id="about" class="bg-indigo-600 py-16">
+  <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center md:space-x-12  p-8 text-center hover:shadow-indigo-600 transition">
+    <div class="w-full md:w-1/2 mb-10 md:mb-0   object-cover w-full h-full">
+      <img src="GO.jpg" alt="Teacher with students" class="rounded-lg shadow-lg mx-auto" width="600" height="400" />
+    </div>
+   <div class="w-full md:w-2/3 text-center md:text-left">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">Welcome to Our SMITIAN'S</h1>
+    <p class="text-lg md:text-xl text-white mb-8">Shaping young minds from Elementary to Senior High School with excellence, integrity, and innovation. Be part of a future-ready generation — secure your spot now at SMIT, Inc.!</p>
+    <a href="WEB2.0.html" class="inline-block bg-indigo-900 text-white px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-indigo-700 transition">Admission</a>
+  </div>
+  </div>
+</section>
+
+<!-- Programs -->
+
+<section id="programs" class="container mx-auto px-6 md:px-12 py-16 ">
+  <h2 class="text-3xl font-extrabold text-indigo-700 text-center mb-12">Programs</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div class="bg-indigo-600 rounded-lg shadow-lg p-8 text-center hover:shadow-indigo-600 transition">
+      <img src="art.jpg" alt="Creative Arts" class="mx-auto mb-6" width="200" height="200" />
+      <h3 class="text-xl font-semibold text-white mb-3">Creative Arts</h3>
+      <p class="text-white">Encouraging imagination and creativity through painting, drawing, and crafts.</p>
+    </div>
+    <div class="bg-indigo-600 rounded-lg shadow-lg p-8 text-center hover:shadow-indigo-600 transition">
+      <img src="dc.jpg" alt="Music and Dance" class="mx-auto mb-6" width="200" height="200" />
+      <h3 class="text-xl font-semibold text-white mb-3">Music & Dance</h3>
+      <p class="text-white">Learning through rhythm, coordination, and joyful expression.</p>
+    </div>
+    <div class="bg-indigo-600 rounded-lg shadow-lg p-8 text-center hover:shadow-indigo-600 transition">
+      <img src="sl.jpg" alt="Speech Laboratory" class="mx-auto mb-6" width="200" height="200" />
+      <h3 class="text-xl font-semibold text-white mb-3">Speech Laboratory</h3>
+      <p class="text-white">Promoting communication skills and confidence through interactive speech activities.</p>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+
+<section id="mission-vision" class="bg-indigo-700 py-16">
+  <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center md:space-x-12 g-white rounded-lg shadow-lg p-8 text-center hover:shadow-indigo-600 transition">
+    <div class="w-full md:w-1/2 mb-10 md:mb-0  rounded-lg shadow-md object-cover w-full h-full bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-indigo-950 transition">
+      <img src="t.jpg" alt="Teacher with students" class="rounded-lg shadow-lg mx-auto" width="600" height="400" />
+    </div>
+    <div class="w-full md:w-1/2 text-center md:text-left">
+      <h2 class="text-3xl font-extrabold text-white mb-6">MISSION & VISION</h2>
+      <p class="text-white mb-6 leading-relaxed">A place where curiosity leads the way—our school fosters exploration, learning, and essential skill-building in a safe, caring setting with passionate teachers at the heart of it all.</p>
+      <a href="about.html" class="inline-block bg-indigo-900 text-white px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-indigo-700 transition">Show more...</a>
+    </div>
+  </div>
+</section>
+<!-- EVENTS -->
+<section id="events" class="container mx-auto px-6 md:px-12 py-16 p-8 text-center hover:shadow-indigo-950 transition">
+  <h2 class="text-3xl font-extrabold text-indigo-700 text-center mb-12">EVENTS</h2>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 bg-indigo-900 rounded-lg shadow-lg overflow-hidden hover:shadow-indigo-950 transition">
+    <img src="n.jpg" alt="Gallery 1"
+         class="rounded-lg shadow-md object-cover w-full h-48 bg-white hover:shadow-xl transition cursor-pointer"
+         onclick="openModal('n.jpg')" />
+    <img src="d.jpg" alt="Gallery 2"
+         class="rounded-lg shadow-md object-cover w-full h-48 bg-white hover:shadow-xl transition cursor-pointer"
+         onclick="openModal('d.jpg')" />
+    <img src="b.jpg" alt="Gallery 3"
+         class="rounded-lg shadow-md object-cover w-full h-48 bg-white hover:shadow-xl transition cursor-pointer"
+         onclick="openModal('b.jpg')" />
+    <img src="c.jpg" alt="Gallery 4"
+         class="rounded-lg shadow-md object-cover w-full h-48 bg-white hover:shadow-xl transition cursor-pointer"
+         onclick="openModal('c.jpg')" />
+    <img src="e.jpg" alt="Gallery 5"
+         class="rounded-lg shadow-md object-cover w-full h-48 bg-white hover:shadow-xl transition cursor-pointer"
+         onclick="openModal('e.jpg')" />
+    <img src="f.jpg" alt="Gallery 6"
+         class="rounded-lg shadow-md object-cover w-full h-48 bg-white hover:shadow-xl transition cursor-pointer"
+         onclick="openModal('f.jpg')" />
+    <img src="spt.jpg" alt="Gallery 7"
+         class="rounded-lg shadow-md object-cover w-full h-48 bg-white hover:shadow-xl transition cursor-pointer"
+         onclick="openModal('spt.jpg')" />
+    <img src="it.jpg" alt="Gallery 8"
+         class="rounded-lg shadow-md object-cover w-full h-48 bg-white hover:shadow-xl transition cursor-pointer"
+         onclick="openModal('it.jpg')" />
+  </div>
+</section>
+
+<!-- News -->
+
+<section id="news" class="bg-indigo-700 py-16">
+  <div class="container mx-auto px-6 md:px-12">
+    <h2 class="text-3xl font-extrabold text-white text-center mb-12">News</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <!-- Repeat for each news item -->
+      <!-- Example News Card -->
+      <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-indigo-900 transition">
+        <img src="pt.jpg" alt="News" class="w-full h-48 object-cover cursor-pointer" onclick="openModal('pt.jpg')" />
+
+```
+    <div class="p-6">
+      <h3 class="text-xl font-semibold text-indigo-600 mb-3">Get Creative with Arts!</h3>
+      <p class="text-gray-700 mb-4">Explore your creativity through fun painting and craft activities while making new friends.</p>
+      
+    </div>
+  </article>
+  </article>
+ <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-indigo-900 transition">
+  <img src="w.jpg" alt="News" class="w-full h-48 object-cover cursor-pointer" onclick="openModal('w.jpg')" />
+  <div class="p-6">
+   <h3 class="text-xl font-semibold text-indigo-600 mb-3">
+   March 11, 2025 || Design your Future! 
+   </h3>
+   <p class="text-gray-700 mb-4">
+   Career Guidance Day, With the Theme: “Empowering Future: The Empact of Career Guidance Program to the 21th Century.
+   
+  </div>
+ </article>
+ <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-indigo-900 transition">
+  <img src="g.jpg" alt="News" class="w-full h-48 object-cover cursor-pointer" onclick="openModal('g.jpg')" />
+  <div class="p-6">
+   <h3 class="text-xl font-semibold text-indigo-600 mb-3">
+   Basic Education Department 
+   </h3>
+   <p class="text-gray-700 mb-4">
+  Baccalaureate Service Officiating Minister :Pastor Stephen P. Quimba
+  April 10, 2025
+   </p>
+  
+  </div>
+ </article>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- Contact -->
+
+<section id="contact" class="container mx-auto px-17 md:px-17 py-16 bg-blue rounded-lg shadow-lg p-8 text-center hover:shadow-indigo-600 transition">
+  <h2 class="text-3xl font-extrabold text-indigo-700 text-center mb-12">Contact Us</h2>
+  <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 g-white rounded-lg shadow-lg p-8 text-center hover:shadow-indigo-600 transition">
+    <form method="POST" action="https://script.google.com/macros/s/AKfycbypfRcpEcGSixiQCVqcVVg4MrTvKd3DqA6fxsA5PwbWBVIEkoXFvJ3e__8Tsjl1oVVWgA/exec" class="bg-white rounded-lg shadow-lg p-8 space-y-6  ">
+      <div>
+        <label class="block text-gray-700 font-semibold mb-2" for="name">Name</label>
+        <input id="name" name="name" type="text" required class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-600" />
+      </div>
+      <div>
+        <label class="block text-gray-700 font-semibold mb-2" for="email">Email</label>
+        <input id="email" name="email" type="email" required class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-600" />
+      </div>
+      <div>
+        <label class="block text-gray-700 font-semibold mb-2" for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-600"></textarea>
+      </div>
+      <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-indigo-700 transition" >Send Message</button>
+    </form>
+    <div class="rounded-lg overflow-hidden shadow-lg">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.685782208555!2d124.6653853747547!3d6.685789593309506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f80d5c00771a3f%3A0x8cbf808f21d2ac36!2sSouthern%20Mindanao%20Institute%20Technology%2C%20Inc.!5e0!3m2!1sfil!2sph!4v1747272937723!5m2!1sfil!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+      <div class="flex items-center space-x-4">
+        <i class="fas fa-map-marker-alt text-indigo-600 text-2xl bg-white"></i>
+        <p>Buenaflor, Tacurong city, Sultan Kudarat, Philippines</p>
+      </div>
+      <!-- Add more contact info here if needed -->
+    </div>
+  </div>
+</section>
+<!-- MODAL -->
+<div id="imgModal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-75 flex items-center justify-center">
+  <div class="relative max-w-3xl mx-auto">
+    <button onclick="closeModal()" class="absolute -top-4 -right-4 text-white bg-red-600 rounded-full w-8 h-8 text-lg font-bold">×</button>
+    <img id="modalImage" src="" class="max-h-[80vh] rounded-lg shadow-lg" />
+  </div>
+</div>
+
+<!-- Mobile Menu Script -->
+
+<script>
+  const form = document.querySelector("form");
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault(); // prevent default to control manually
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+      });
+
+      if (response.ok) {
+        alert("Message sent successfully!");
+        form.reset(); // clears all input/textarea fields
+      } else {
+        alert("Failed to send message.");
+      }
+    } catch (error) {
+      alert("Error occurred. Please try again.");
+      console.error(error);
+    }
+  });
+ 
+  function openModal(imgSrc) {
+    document.getElementById('modalImage').src = imgSrc;
+    document.getElementById('imgModal').classList.remove('hidden');
+  }
+
+  function closeModal() {
+    document.getElementById('imgModal').classList.add('hidden');
+    document.getElementById('modalImage').src = '';
+  }
+
+
+</script>
+
+</body>
+</html>
